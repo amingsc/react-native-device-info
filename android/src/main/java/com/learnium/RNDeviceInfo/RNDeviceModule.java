@@ -803,7 +803,7 @@ public class RNDeviceModule extends ReactContextBaseJavaModule {
   @SuppressLint("HardwareIds")
   @ReactMethod(isBlockingSynchronousMethod = true)
   public String getUniqueIdSync() { 
-    return getString(getReactApplicationContext().getContentResolver(), Settings.Secure.ANDROID_ID); 
+    //return getString(getReactApplicationContext().getContentResolver(), Settings.Secure.ANDROID_ID); 
     return "null"; //fix隐私政策违规问题，注意这样修改后应该是无法获取设备唯一号unique_id的。
   }
 
